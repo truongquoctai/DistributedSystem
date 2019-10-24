@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseNavigation" customModule="DistributedSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFeature" destination="HZu-zH-41B" id="RFK-5u-zB7"/>
+                <outlet property="btnHome" destination="A3I-nx-abn" id="sIZ-TG-7fz"/>
+                <outlet property="btnSetting" destination="KF7-Rq-yw6" id="T5V-it-Y53"/>
+                <outlet property="btnUser" destination="xl3-97-utD" id="3Ie-B3-HyR"/>
+                <outlet property="vContainer" destination="iN0-l3-epB" id="2C3-lM-Lcg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3I-nx-abn">
+                    <rect key="frame" x="12" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Nwg-wI-ozY"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="home"/>
+                    <connections>
+                        <action selector="onBtnHome:" destination="-1" eventType="touchUpInside" id="0vh-cy-1sZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZu-zH-41B">
+                    <rect key="frame" x="125" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="C3F-LS-8B9"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="features"/>
+                    <connections>
+                        <action selector="onBtnFeature:" destination="-1" eventType="touchUpInside" id="5ra-uU-qgk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl3-97-utD">
+                    <rect key="frame" x="239" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="pXv-UD-E3v"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="user"/>
+                    <connections>
+                        <action selector="onBtnUser:" destination="-1" eventType="touchUpInside" id="Ee3-uy-1dP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF7-Rq-yw6">
+                    <rect key="frame" x="352" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="nbG-Ye-7AP"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="setting"/>
+                    <connections>
+                        <action selector="onBtnSetting:" destination="-1" eventType="touchUpInside" id="0Yo-ey-QIQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HZu-zH-41B" firstAttribute="leading" secondItem="A3I-nx-abn" secondAttribute="trailing" constant="63" id="0eG-Xy-jEF"/>
+                <constraint firstAttribute="bottom" secondItem="xl3-97-utD" secondAttribute="bottom" id="1pI-2Y-uiA"/>
+                <constraint firstItem="A3I-nx-abn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E33-7i-HlK"/>
+                <constraint firstItem="HZu-zH-41B" firstAttribute="centerY" secondItem="A3I-nx-abn" secondAttribute="centerY" id="H4m-Sy-yol"/>
+                <constraint firstAttribute="bottom" secondItem="KF7-Rq-yw6" secondAttribute="bottom" id="KEx-VO-HCV"/>
+                <constraint firstAttribute="bottom" secondItem="HZu-zH-41B" secondAttribute="bottom" id="Oiw-N4-Jjc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KF7-Rq-yw6" secondAttribute="trailing" constant="12" id="TLY-Jh-KIP"/>
+                <constraint firstItem="KF7-Rq-yw6" firstAttribute="leading" secondItem="xl3-97-utD" secondAttribute="trailing" constant="63" id="hV3-bq-RGQ"/>
+                <constraint firstItem="xl3-97-utD" firstAttribute="centerY" secondItem="HZu-zH-41B" secondAttribute="centerY" id="icA-2c-X4H"/>
+                <constraint firstAttribute="bottom" secondItem="A3I-nx-abn" secondAttribute="bottom" id="oDE-kk-gJh"/>
+                <constraint firstItem="KF7-Rq-yw6" firstAttribute="centerY" secondItem="xl3-97-utD" secondAttribute="centerY" id="uDf-uP-dzb"/>
+                <constraint firstItem="A3I-nx-abn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="zBe-oK-TRn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="features" width="50" height="50"/>
+        <image name="home" width="50" height="50"/>
+        <image name="setting" width="64" height="64"/>
+        <image name="user" width="64" height="64"/>
+    </resources>
+</document>

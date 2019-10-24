@@ -1,0 +1,6 @@
+framework module Pods_DistributedSystemTests {
+  umbrella header "Pods-DistributedSystemTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

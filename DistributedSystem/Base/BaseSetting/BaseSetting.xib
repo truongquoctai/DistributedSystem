@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseSetting" customModule="DistributedSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="btn" destination="d3v-j3-ySf" id="q70-c4-49U"/>
+                <outlet property="imgLeft" destination="TEj-D3-AM6" id="oiG-V0-5cA"/>
+                <outlet property="imgRight" destination="Zm5-Ff-fXC" id="aKx-P3-0jX"/>
+                <outlet property="vContainer" destination="iN0-l3-epB" id="Y9U-hz-lSo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TEj-D3-AM6">
+                    <rect key="frame" x="5" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="vOB-Kn-GNG"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_next" translatesAutoresizingMaskIntoConstraints="NO" id="Zm5-Ff-fXC">
+                    <rect key="frame" x="369" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="zyE-f5-CXR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3v-j3-ySf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.16530939936637878" green="0.3673359751701355" blue="0.95498365163803101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtn:" destination="-1" eventType="touchUpInside" id="Mjl-xX-KcT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Zm5-Ff-fXC" secondAttribute="bottom" constant="5" id="3wP-iC-OZ5"/>
+                <constraint firstAttribute="bottom" secondItem="d3v-j3-ySf" secondAttribute="bottom" id="84M-P7-7Dg"/>
+                <constraint firstItem="d3v-j3-ySf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KZL-xS-13I"/>
+                <constraint firstItem="Zm5-Ff-fXC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="LUn-ny-g9D"/>
+                <constraint firstItem="TEj-D3-AM6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="Mbu-Ab-iqk"/>
+                <constraint firstAttribute="bottom" secondItem="TEj-D3-AM6" secondAttribute="bottom" constant="5" id="SPA-2P-kuT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zm5-Ff-fXC" secondAttribute="trailing" constant="5" id="WTH-Ea-fUs"/>
+                <constraint firstItem="d3v-j3-ySf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XLR-4D-XAr"/>
+                <constraint firstItem="TEj-D3-AM6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ydc-Za-7Ap"/>
+                <constraint firstItem="d3v-j3-ySf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sMZ-cI-rh4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="59.598214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_next" width="50" height="50"/>
+    </resources>
+</document>
